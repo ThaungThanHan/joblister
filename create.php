@@ -5,10 +5,10 @@ include_once 'config/init.php';
 <?php
 $job = new Job();
 
-if (isset($_POST['submit'])){
+if (isset($_POST['submit'])){           // job-create.php mr Form ka ny POST method nae submit lite lo..shi tamya input twy akone access ya.
     //create Data Array.. Putting user input to an array that is going to the database
     $data = array();
-    $data['job_title'] = $_POST['job_title'];
+    $data['job_title'] = $_POST['job_title'];               // assigning each input as an item in an array
     $data['company'] = $_POST['company'];
     $data['category_id'] = $_POST['category'];
     $data['description'] = $_POST['description'];

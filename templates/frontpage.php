@@ -4,9 +4,11 @@
         <form method="GET" action="index.php">
           <select name="category" class="form-control">
             <option value="0">Choose Category</option>
+
             <?php foreach($categories as $category): ?>
               <option value="<?php echo $category->id; ?>"><?php echo $category->name;  ?></option>  <!-- like in javascript, {category.id} jsx asrr.. php echo $category->id; lote tr-->
             <?php endforeach; ?>
+            
           </select>
           <br/>
           <input type="submit" class="btn btn-lg btn-success" value="Find">

@@ -1,8 +1,8 @@
 <?php 
 include_once 'config/init.php';
  ?>
-
-<?php
+ 
+<?php    // this file is for displaying Single job page.
 $job = new Job();
 if(isset($_POST['del_id'])){
     $del_id = $_POST['del_id'];
